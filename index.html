@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <title>My Learning Journal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,9 +38,12 @@
     </header>
     <main>
       <section class="main-article">
-        <div class="main-container">
+        <div
+          class="main-container"
+          aria-label="laptop on a desk with a lamp and sunset in the background"
+        >
           <a href="./article.html">
-            <p class="date">July 23, 2025</p>
+            <p class="main-date">July 23, 2025</p>
             <h2 class="main-title">My new journey as a bootcamp student.</h2>
             <p>
               After several months of learning in the Frontend Developer Career
@@ -48,6 +52,43 @@
               peers.
             </p>
           </a>
+        </div>
+      </section>
+
+      <section class="blog-grid">
+        <div class="one">
+          <img
+            src="images/article-image-03.png"
+            alt="laptop with code on the screen next to a small prickly plant"
+            class="blog-img"
+          />
+          <p class="blog-date">August 5, 2025</p>
+          <h3>Blog one</h3>
+          <p>
+            I'm excited to start a new learning journey as a Scrimba Bootcamp
+            student! After several months of learning in the Frontend Developer
+            Career Path.
+          </p>
+        </div>
+        <div class="two">
+          <img src="./images/article-image-02.png" alt="" class="blog-img"/>
+          <p class="blog-date">September 7, 2025</p>
+          <h3>Blog two</h3>
+          <p>
+            I'm excited to start a new learning journey as a Scrimba Bootcamp
+            student! After several months of learning in the Frontend Developer
+            Career Path.
+          </p>
+        </div>
+        <div class="three">
+          <img src="./images/article-image-01.png" alt="" class="blog-img"/>
+          <p class="blog-date">October 9, 2025</p>
+          <h3>Blog three</h3>
+          <p>
+            I'm excited to start a new learning journey as a Scrimba Bootcamp
+            student! After several months of learning in the Frontend Developer
+            Career Path.
+          </p>
         </div>
       </section>
     </main>

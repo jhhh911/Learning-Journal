@@ -6,11 +6,6 @@ html, body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
 /* --- Header --- */
 
 header h1 {
@@ -45,39 +40,6 @@ nav a {
   font-size: .75rem;
 }
 
-/* ---Main Article--- */
-
-.main-article {
-  background-image: url('../images//article-image-hero.png');
-  height: 20em;
-  width: auto;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  object-fit: cover;
-}
-
-.main-container {
-  width: 90%;
-  margin-left: 1.25em;
-  margin-bottom: 1.5em;
-}
-
-.main-title {
-  font-weight: bold;
-  font-size: 2rem;
-  margin: .5em 0;
-}
-
-.main-article-container p {
-  margin: 0;
-}
-
-.date {
-  font-size: .75rem;
-}
-
 /* ---Media Queries--- */
 
 @media (min-width: 700px) {
@@ -94,22 +56,5 @@ nav a {
 
   nav a {
     font-size: 1rem;
-  }
-
-  .main-article {
-    height: 31.25em;
-  }
-
-  .main-container {
-    margin-left: 3.12em;
-    margin-bottom: 3.75em;
-  }
-
-  .date {
-    font-size: 1rem;
-  }
-
-  .main-title {
-    font-size: 2.5rem;
   }
 }
