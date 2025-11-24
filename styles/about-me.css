@@ -1,0 +1,111 @@
+main {
+  margin: 0 1.25em;
+}
+.img-container {
+  height: 182px;
+  width: 182px;
+  background-image: url('../images/stick-figure.png');
+  border-radius: 50%;
+  border: 1px solid black;
+  background-position: -100px 0px;
+  background-size: 400px;
+  margin-top: 1.62em;
+}
+
+.main-title {
+  font-size: 2.15rem;
+  margin-bottom: .5em;
+}
+
+.subtitle-1 {
+  margin-top: 3.12em;
+}
+
+.posts {
+  text-align: center;
+  margin-top: 2.75em;
+  margin-bottom: 1.69em;
+}
+
+.blog-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---Blog grid--- */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  grid-template-areas:
+    ".... one ...."
+    ".... two ...."
+    ".... thr ....";
+}
+
+.blog-text-container {
+  margin-left: 0.7em;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: thr;
+}
+
+.blog-img {
+  display: block;
+  width: 100%;
+  margin: 2.5em auto 0;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  padding: 0 0.5em;
+}
+
+.blog-date {
+  font-size: 0.875rem;
+}
+
+.blog-text-container h3 {
+  font-size: 1.5rem;
+  color: #141414;
+  margin-top: 0.5em;
+}
+
+.posts {
+  text-align: center;
+  margin-top: 2.75em;
+}
+
+.blog-grid:last-child {
+  margin-bottom: 3em;
+}
+
+@media (min-width: 700px) {
+  .blog-grid {
+    grid-template-columns: 1em repeat(3, 1fr) 1em;
+    grid-template-areas: ".... one two thr ....";
+    margin-top: -50px;
+  }
+
+  .main-card {
+    display: flex;
+  }
+
+  .card-container {
+    flex: 1;
+    margin-left: 2em;
+    margin-right: 3em;
+  }
+
+  .content-container {
+    margin: 0 7.56em;
+  }
+}

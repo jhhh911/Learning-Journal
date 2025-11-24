@@ -11,7 +11,7 @@
 }
 
 .main-date {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .main-title {
@@ -80,6 +80,7 @@
 
 .posts {
   text-align: center;
+  margin-top: 2.75em;
 }
 
 .blog-grid:last-child {
@@ -89,8 +90,7 @@
 @media (min-width: 700px) {
   .blog-grid {
     grid-template-columns: 1em repeat(3, 1fr) 1em;
-    grid-template-areas:
-      ".... one two thr ....";
+    grid-template-areas: ".... one two thr ....";
   }
 
   .blog-img {
@@ -98,6 +98,6 @@
   }
 
   .posts {
-    margin-top: 4.5em;
+    margin-bottom: 4.5em;
   }
 }
